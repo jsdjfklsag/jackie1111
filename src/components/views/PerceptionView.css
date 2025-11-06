@@ -1,0 +1,21 @@
+.perception-view { width: 100%; }
+.perception-layout { display: flex; gap: 16px; }
+.sensor-data-area { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.sensor-column { background-color: #1C1C1C; border: 1px solid #3C3C3C; border-radius: 4px; padding: 16px; }
+.sensor-column.warning { border-color: #FFFF00; animation: pulse-border 1s infinite; }
+@keyframes pulse-border { 0%, 100% { border-color: #FFFF00; } 50% { border-color: #FF8800; } }
+.sensor-header { margin-bottom: 12px; }
+.sensor-header h3 { font-size: 12pt; color: #E0E0E0; margin-bottom: 8px; }
+.clarity-score, .point-cloud-info, .sonar-info { font-size: 10pt; color: #888; }
+.mock-image, .mock-point-cloud, .mock-sonar { width: 100%; height: 300px; background-color: #0C0C0C; border: 1px solid #555; border-radius: 4px; display: flex; align-items: center; justify-content: center; }
+.image-placeholder, .point-cloud-placeholder, .sonar-placeholder { display: flex; flex-direction: column; align-items: center; gap: 8px; color: #888; }
+.gradient-bar { width: 200px; height: 20px; background: linear-gradient(to right, #FFFFFF 0%, #888888 50%, #000000 100%); border: 1px solid #555; border-radius: 2px; }
+.mads-panel { width: 320px; background-color: #1C1C1C; border: 1px solid #3C3C3C; border-radius: 4px; padding: 16px; }
+.mads-item { padding: 12px; background-color: #0C0C0C; border-radius: 4px; border: 1px solid #3C3C3C; margin-bottom: 12px; }
+.mads-item.error { border-color: #FF0000; background-color: #2C0000; }
+.mads-sensor-name { font-size: 12pt; color: #E0E0E0; margin-bottom: 6px; font-weight: bold; }
+.mads-values { font-family: 'Consolas', monospace; font-size: 11pt; color: #888; }
+.mads-status { color: #00FF00; margin-left: 8px; }
+.mads-item.error .mads-status { color: #FF0000; }
+.mads-warning { margin-top: 8px; padding: 8px; background-color: #4C0000; border-left: 3px solid #FF0000; color: #FFAAAA; font-size: 10pt; }
+

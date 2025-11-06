@@ -1,0 +1,86 @@
+.overview-view {
+  width: 100%;
+}
+
+.view-title {
+  font-size: 18pt;
+  color: #E0E0E0;
+  margin-bottom: 20px;
+}
+
+.confidence-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.confidence-card {
+  background-color: #1C1C1C;
+  border: 1px solid #3C3C3C;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.card-header h3 {
+  font-size: 12pt;
+  color: #E0E0E0;
+}
+
+.confidence-value {
+  font-family: 'Consolas', monospace;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.health-status {
+  font-size: 10pt;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.performance-content {
+  display: flex;
+  gap: 20px;
+}
+
+.performance-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mAP-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.mAP-display span:first-child {
+  font-size: 14pt;
+  color: #E0E0E0;
+}
+
+.performance-right {
+  flex: 2;
+}
+
+.resource-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resource-status {
+  margin-top: 16px;
+}
+

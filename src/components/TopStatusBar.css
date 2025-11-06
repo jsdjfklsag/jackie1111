@@ -1,0 +1,46 @@
+.top-status-bar {
+  height: 50px;
+  background-color: #1C1C1C;
+  border-bottom: 2px solid #3C3C3C;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex-shrink: 0;
+}
+
+.status-bar-left,
+.status-bar-center,
+.status-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.separator {
+  color: #555;
+  margin: 0 8px;
+}
+
+.warning-badge {
+  background-color: #FF0000;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 10pt;
+  margin-left: 8px;
+}
+
+.status-bar-right.warning {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+

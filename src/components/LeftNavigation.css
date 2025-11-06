@@ -1,0 +1,67 @@
+.left-navigation {
+  width: 200px;
+  background-color: #1C1C1C;
+  border-right: 2px solid #3C3C3C;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.nav-header {
+  padding: 20px;
+  border-bottom: 1px solid #3C3C3C;
+}
+
+.nav-header h2 {
+  font-size: 16pt;
+  color: #E0E0E0;
+}
+
+.nav-menu {
+  flex: 1;
+  padding: 10px 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-left: 3px solid transparent;
+}
+
+.nav-item:hover {
+  background-color: #2C2C2C;
+}
+
+.nav-item.active {
+  background-color: #2C2C2C;
+  border-left-color: #00FF00;
+  color: #00FF00;
+}
+
+.nav-icon {
+  font-size: 18px;
+  margin-right: 12px;
+}
+
+.nav-label {
+  font-size: 12pt;
+}
+
+.nav-footer {
+  padding: 16px;
+  border-top: 1px solid #3C3C3C;
+}
+
+.shortcut-hint {
+  font-size: 10pt;
+  color: #888;
+  line-height: 1.8;
+}
+
+.shortcut-hint div {
+  margin-bottom: 4px;
+}
+
