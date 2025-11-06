@@ -13,7 +13,7 @@ const OverviewView = ({ systemState }: OverviewViewProps) => {
     const date = new Date(timestamp)
     return `${date.getMinutes()}:${date.getSeconds().toString().padStart(2, '0')}`
   }
-  const confidenceTrend = trendData.map((d, index) => ({
+  const confidenceTrend = trendData.map((d) => ({
     time: formatTime(d.time),
     cam: d.cam,
     lidar: d.lidar,
