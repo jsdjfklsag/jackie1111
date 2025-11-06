@@ -7,7 +7,7 @@ interface PerceptionViewProps {
 }
 
 const PerceptionView = ({ systemState }: PerceptionViewProps) => {
-  const [selectedImage, setSelectedImage] = useState<number | null>(null)
+  const [_selectedImage, setSelectedImage] = useState<number | null>(null)
   const madsHealth = [
     {
       sensor: 'camera',
