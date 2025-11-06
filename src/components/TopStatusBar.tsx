@@ -1,4 +1,3 @@
-import React from 'react'
 import { SystemState } from '../types'
 import './TopStatusBar.css'
 
@@ -6,7 +5,7 @@ interface TopStatusBarProps {
   systemState: SystemState
 }
 
-const TopStatusBar: React.FC<TopStatusBarProps> = ({ systemState }) => {
+const TopStatusBar = ({ systemState }: TopStatusBarProps) => {
   const getStatusIcon = () => {
     switch (systemState.status) {
       case 'normal':

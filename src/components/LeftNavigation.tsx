@@ -1,4 +1,3 @@
-import React from 'react'
 import './LeftNavigation.css'
 
 interface LeftNavigationProps {
@@ -6,7 +5,7 @@ interface LeftNavigationProps {
   onViewChange: (view: string) => void
 }
 
-const LeftNavigation: React.FC<LeftNavigationProps> = ({ currentView, onViewChange }) => {
+const LeftNavigation = ({ currentView, onViewChange }: LeftNavigationProps) => {
   const menuItems = [
     { id: 'overview', label: '系统概览', icon: '📊' },
     { id: 'perception', label: '多模态感知监控', icon: '👁️' },

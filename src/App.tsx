@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import TopStatusBar from './components/TopStatusBar'
 import LeftNavigation from './components/LeftNavigation'
 import MainDisplayArea from './components/MainDisplayArea'

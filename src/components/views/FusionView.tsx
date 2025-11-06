@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { SystemState } from '../../types'
 import './FusionView.css'
 
@@ -6,7 +6,7 @@ interface FusionViewProps {
   systemState: SystemState
 }
 
-const FusionView: React.FC<FusionViewProps> = ({ systemState }) => {
+const FusionView = ({ systemState }: FusionViewProps) => {
   const [activeTab, setActiveTab] = useState<'data' | 'feature' | 'decision'>('data')
   const [paintingIntensity, setPaintingIntensity] = useState(75)
   const [showPreview, setShowPreview] = useState(false)

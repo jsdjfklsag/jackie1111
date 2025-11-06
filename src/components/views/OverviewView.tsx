@@ -1,4 +1,3 @@
-import React from 'react'
 import { SystemState } from '../../types'
 import { generateTrendData } from '../../utils/mockData'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, PieChart, Pie, Cell } from 'recharts'
@@ -8,7 +7,7 @@ interface OverviewViewProps {
   systemState: SystemState
 }
 
-const OverviewView: React.FC<OverviewViewProps> = ({ systemState }) => {
+const OverviewView = ({ systemState }: OverviewViewProps) => {
   const trendData = generateTrendData(60)
   const formatTime = (timestamp: number) => {
     const date = new Date(timestamp)

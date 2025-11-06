@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { SystemState } from '../../types'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
 import './NavigationView.css'
@@ -7,7 +7,7 @@ interface NavigationViewProps {
   systemState: SystemState
 }
 
-const NavigationView: React.FC<NavigationViewProps> = ({ systemState }) => {
+const NavigationView = ({ systemState }: NavigationViewProps) => {
   const [viewMode, setViewMode] = useState<'2d' | '3d'>('2d')
   const isCarefulMode = systemState.modalConfidences.lidar < 0.4 && systemState.modalConfidences.cam < 0.4
   const errorData = Array.from({ length: 50 }, (_, i) => ({

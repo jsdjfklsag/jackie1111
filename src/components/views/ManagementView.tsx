@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { SystemState } from '../../types'
 import './ManagementView.css'
 
@@ -6,7 +6,7 @@ interface ManagementViewProps {
   systemState: SystemState
 }
 
-const ManagementView: React.FC<ManagementViewProps> = ({ systemState }) => {
+const ManagementView = ({ systemState: _systemState }: ManagementViewProps) => {
   const [activeTab, setActiveTab] = useState<'algorithm' | 'data' | 'device'>('algorithm')
 
   return (

@@ -1,4 +1,3 @@
-import React from 'react'
 import { SystemState } from '../types'
 import OverviewView from './views/OverviewView'
 import PerceptionView from './views/PerceptionView'
@@ -12,7 +11,7 @@ interface MainDisplayAreaProps {
   systemState: SystemState
 }
 
-const MainDisplayArea: React.FC<MainDisplayAreaProps> = ({ currentView, systemState }) => {
+const MainDisplayArea = ({ currentView, systemState }: MainDisplayAreaProps) => {
   const renderView = () => {
     switch (currentView) {
       case 'overview':

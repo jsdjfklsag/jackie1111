@@ -1,4 +1,3 @@
-import React from 'react'
 import { SystemState } from '../types'
 import './RightMonitorPanel.css'
 
@@ -7,7 +6,7 @@ interface RightMonitorPanelProps {
   systemState: SystemState
 }
 
-const RightMonitorPanel: React.FC<RightMonitorPanelProps> = ({ currentView, systemState }) => {
+const RightMonitorPanel = ({ currentView: _currentView, systemState }: RightMonitorPanelProps) => {
   return (
     <div className="right-monitor-panel">
       <div className="panel-header">

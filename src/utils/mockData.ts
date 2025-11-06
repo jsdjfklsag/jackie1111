@@ -1,6 +1,6 @@
 import { SystemState, ModalConfidence } from '../types'
 
-export function generateMockData(): Partial<SystemState> {
+export function generateMockData(): Partial<SystemState> & { modalConfidences: ModalConfidence } {
   // 生成随机但合理的模拟数据
   const baseCam = 0.85 + (Math.random() - 0.5) * 0.1
   const baseLidar = 0.83 + (Math.random() - 0.5) * 0.12

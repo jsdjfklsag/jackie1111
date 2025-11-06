@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { SystemState } from '../../types'
 import './PerceptionView.css'
 
@@ -6,7 +6,7 @@ interface PerceptionViewProps {
   systemState: SystemState
 }
 
-const PerceptionView: React.FC<PerceptionViewProps> = ({ systemState }) => {
+const PerceptionView = ({ systemState }: PerceptionViewProps) => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
   const madsHealth = [
     {
